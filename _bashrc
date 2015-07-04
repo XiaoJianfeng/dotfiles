@@ -1,0 +1,34 @@
+
+# ==== added by xiaojf
+# -- aliases
+if [ -f ~/.alias ]
+then
+	source ~/.alias
+fi
+
+# -- configurations
+# if [[ $TERM == xterm-* ]] 
+# then
+#     export PS1="\u@\h \w> "
+# fi
+
+export PS1="\u@\h \w> "
+
+if [ ! -z $STY ]
+then 
+    export PS1="(screen)${PS1}"
+elif [ ! -z $TMUX ]
+then 
+    export PS1="(tmux)${PS1}"
+fi
+
+
+
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]
+then
+    . /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+
+#PERL_MB_OPT="--install_base \"/Users/xiaojf/.local/perl5\""; export PERL_MB_OPT;
+#PERL_MM_OPT="INSTALL_BASE=/Users/xiaojf/.local/perl5"; export PERL_MM_OPT;

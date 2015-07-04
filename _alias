@@ -1,0 +1,10 @@
+alias h='history 200'
+alias lt='ls -rtlh'
+alias sls='screen -ls'
+export HOLLY="115.29.166.187"
+alias holly='ssh xiaojf@115.29.166.187'
+alias mholly='mosh xiaojf@115.29.166.187'
+alias mholly_progarm='mosh program@115.29.166.187'
+# connect to HOLLY with X11 forwarding
+alias hollyy='ssh -Y xiaojf@115.29.166.187'
+alias rsync='rsync --exclude ".DS_Store" '

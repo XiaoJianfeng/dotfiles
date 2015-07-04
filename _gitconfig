@@ -1,0 +1,10 @@
+# This is Git's per-user configuration file.
+[core]
+# Please adapt and uncomment the following lines:
+	user = Xiao Jianfeng
+	email = xiaojianfeng2013@gmail.com
+	excludesfile = /Users/xiaojf/.gitignore
+
+[credential]
+	helper = osxkeychain
+	useHttpPath = true
