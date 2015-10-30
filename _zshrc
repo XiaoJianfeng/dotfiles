@@ -112,6 +112,9 @@ then
     export PS1="(tmux)${PS1}"
 fi
 
+# so Ctrl-U will delete the words before cursor, rather than the whole line
+bindkey \^U backward-kill-line
+
 # ==== added by xiaojf from bash configuration files - end
 
 # MacPorts Installer addition on 2014-12-31_at_00:00:49: adding an appropriate PATH variable for use with MacPorts.
