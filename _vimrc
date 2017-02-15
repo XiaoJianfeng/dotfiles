@@ -33,7 +33,7 @@ autocmd FileType python setlocal expandtab shiftwidth=4
 autocmd FileType pyrex setlocal expandtab shiftwidth=4
 autocmd FileType C setlocal shiftwidth=4
 autocmd FileType R setlocal wrap
-
+autocmd FileType python nmap <F9> :update<CR>:!python %<CR>
 map <F5> :set list!<CR>
 map <F7> :set wrap!<CR>
 "map <F8> "*
